@@ -1,12 +1,5 @@
 rvm:
-  - 1.9.2
-  - 1.9.3
-  - 2.0.0
-  - 2.1
-  - ruby-head
-  - rbx-2
-  - jruby
-  - jruby-head
+  - 2.4.1
 
 script:
   - rake spec
@@ -15,12 +8,3 @@ matrix:
   allow_failures:
     - rvm: ruby-head
     - rvm: jruby-head
-
-notifications:
-  irc: "irc.freenode.org#pry"
-  recipients:
-    - jrmair@gmail.com
-
-branches:
-  only:
-    - master
